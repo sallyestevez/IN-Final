@@ -178,144 +178,156 @@ var game = {
     },
 
     noOpen: {
-      message: "",
+      message:
+        "You ignore customers' pleas. It's not even 5:30 yet. They can wait until opening.",
       music: "Deduction.mp3",
       background_image: "Yasogami.jpg",
       choices: [
         {
-          text: "Not at all",
-          nextLevel: "yukikoDied",
-        },
-
-        {
-          text: "Definitely. Yukiko must be inside the TV.",
-          nextLevel: "saveYukiko",
+          text: "Enter the store.",
+          nextLevel: "insideStore",
         },
       ],
     },
 
-    yukikoDied: {
+    yesOpen: {
       message:
-        "So, the Midnight Channel does have something to do with the murders. People are thrown into the TV, where they are then killed. That's what happened to Yukiko. You could've saved her.",
+        "Right when you're about to open, a coworker sees what you're doing and tells you to stop.",
       music: "Reverie.mp3",
       background_image: "P4Background2.jpg",
       choices: [
         {
-          text: "Game over for me",
-          nextLevel: "start",
+          text: "ok, time to enter the store and get ready.",
+          nextLevel: "insideStore",
         },
       ],
     },
 
-    saveYukiko: {
+    insideStore: {
       message:
-        "You guys decide to save Yukiko! With your newfound Persona powers, this will be a piece of cake!",
+        "You and your coworkers spend time organizing the store before opening (as if it's not going to be unrecognizable in a few hours). Finally, it's time to open! Brace yourself for what's to come.",
       music: "Backside Of The TV.mp3",
       background_image: "Midnight.jpg",
       choices: [
         {
-          text: "But Chie doesn't have a Persona",
-          nextLevel: "chieShadow",
+          text: "Oh no.",
+          nextLevel: "openingTime",
+        },
+        {
+          text: "Happy Hunger Games, and may the odds be ever in your favor.",
+          nextLevel: "openingTime",
         },
       ],
     },
 
     chieShadow: {
       message:
-        "Uh oh! Chie's shadow self appeared! It's a part of Chie that she doesn't want to accept (so you need to fight it before it runs amok). Deep down, Chie is jealous of Yukiko.",
+        "Right away people come rushing in. However, since the crowd is too large, not everyone can enter the store at the same time. A lady who was unable to enter the store tells you that the lines are too long. Can you make them shorter?",
       music: "Borderline of Madness.mp3",
       background_image: "ChieShadow.PNG",
       choices: [
         {
-          text: "'You're not me!' ~ Chie",
-          nextLevel: "chieShadowFight",
+          text: `"No, I can't make lines shorter. The lines are there for a reason!"`,
+          nextLevel: "lineLady1",
+        },
+        {
+          text: "Ignore her and walk away. I'm not dealing with this nonsense.",
+          nextLevel: "",
         },
       ],
     },
 
-    chieShadowFight: {
+    lineLady1: {
       message:
-        "This is a group effort. You and Yosuke need to fight this thing together. Since, you know, you two are the only ones with Personas. And Chie really needs your help.",
+        "Well, responding to her was a mistake! She now wants to go to the front of the line. When you tell her no, she asks to speak to the manager.",
       music: "I'll Face Myself -Battle-.mp3",
       background_image: "YukikoCastle.jpg",
       choices: [
         {
-          text: "YEAH!",
-          nextLevel: "fightSuccess",
+          text: "Lie and say that you're the manager.",
+          nextLevel: "managerLie",
         },
 
         {
-          text: "We're not fighting this",
-          nextLevel: "fightFailure",
+          text: `"Ma'am, there are hundreds of people in this store. I cannot get the manager.`,
+          nextLevel: "managerTruth",
         },
       ],
     },
 
-    fightSuccess: {
+    managerLie: {
       message:
-        "You defeated Chie's Shadow, and she managed to accept it. Okay, yeah, maybe she is a bit jealous of Yukiko. Who wouldn't be? Oh, and Chie also got a Persona!",
+        "You're able to convince her that you're the manager, and that she should wait her turn.",
       music: "I'll Face Myself.mp3",
       background_image: "ChieAccepts.jpg",
       choices: [
         {
-          text: "Now we can actually save Yukiko!",
+          text: "Problem solved!",
           nextLevel: "p4end",
         },
       ],
     },
 
-    p4end: {
+    managerTruth: {
       message:
-        "I'm going to end things here. You guys end up saving Yukiko, she gets a Persona, and you meet new people who also get Personas. This group of Persona users is known as the Investigation Team (although you guys can't tell anyone you use Personas). You solve the mystery of the Midnight Channel, and it turns out the killer was someone you knew. After that, all is good in the small town you and your friends live in.",
+        "The lady gets mad when you tell her this and throws a tantrum. She sits on the floor and refuses to get up. You really don't want to deal with this right now.",
       music: "Electronica In Velvet Room.mp3",
       background_image: "P4Background1.jpg",
       choices: [
         {
-          text: "That was fun",
-          nextLevel: "start",
+          text: "Call security and leave it up to them.",
+          nextLevel: "ladySecurity",
+        },
+        {
+          text: "Walk away. I need to help other customers.",
+          nextLevel: "section",
+        },
+        {
+          text: "Drop everything and go home.",
+          nextLevel: "ladyGoHome",
         },
       ],
     },
 
-    fightFailure: {
-      message: "And you LOST",
+    ladySecurity: {
+      message:
+        "You call security and leave the rest up to them. Finally, you can get back to work.",
       music: "Reverie.mp3",
       background_image: "P4Background1.jpg",
       choices: [
         {
-          text: "Game over",
-          nextLevel: "start",
+          text: "Get to work!",
+          nextLevel: "section",
         },
       ],
     },
 
-    xc2Start: {
+    ladyGoHome: {
       message:
-        "It turns out that the green thing is actually a sword girl named Pyra, and she brings you back from the dead on one condition: you need to take her to Elysium (a.k.a. a place that may or may not exist). What do you do?",
+        "Since the store had JUST opened and you were already dealing with insufferable people, you figured that the rest of today would be torture. You decide to go home. Unfortunately, you did not survive Walmart Black Friday.",
       music: "Where We Used To Be.mp3",
       background_image: "uraya-screen-2.jpg",
       choices: [
         {
-          text: "Sure, I'll take Pyra to Elysium.",
-          nextLevel: "elysium",
-        },
-
-        {
-          text: "Going to Elysium isn't worth it. Bye.",
+          text: "Back to start :(",
           nextLevel: "start",
         },
       ],
     },
 
-    elysium: {
+    section: {
       message:
-        "Getting to Elysium is no easy task. There's a lot that needs to be done. I guess you could say it's going to be a bizarre adventure.",
+        "Now that that's done, what do you want to deal with? I mean, where do you want to work?",
       music: "Exploration.mp3",
       background_image: "uraya-screen-2.jpg",
       choices: [
         {
-          text: "Darn. Okay. :(",
-          nextLevel: "gormott",
+          text: "Electronics section",
+          nextLevel: "electronics",
+        },
+        {
+          text: "Home goods section",
+          nextLevel: "homeGoods",
         },
       ],
     },
