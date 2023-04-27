@@ -567,15 +567,222 @@ var game = {
       ],
     },
 
-    xc2ending: {
+    homeGoods: {
       message:
-        "You've won (not really but this game isn't over and it's kinda long so for the sake of time I'm saying you won)! Do you make it to Elysium? I'm not telling.",
+        "You made your way over to the home goods section. What do you feel like doing?",
       music: "Still, Move Forward!.mp3",
       background_image: "",
       choices: [
         {
-          text: "👌",
+          text: "Organizing shelves",
+          nextLevel: "organizing",
+        },
+        {
+          text: "Helping customers out",
+          nextLevel: "helpCustomers",
+        },
+      ],
+    },
+
+    organizing: {
+      message:
+        "Organizing shelves seems like the easiest thing to do as a first-time Black Friday employee. You're stuck organizing shelves for 8 hours, but at least customers don't bother you! 8 hours later, your shift is done and you can go home! Congratulations! You survived Walmart Black Friday!",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Yay!",
           nextLevel: "start",
+        },
+      ],
+    },
+
+    helpCustomers: {
+      message: "You've decided to help customers. Who approaches you first?",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Older lady holding a basket",
+          nextLevel: "olderLady",
+        },
+        {
+          text: "Person with something in their hands",
+          nextLevel: "returns",
+        },
+        {
+          text: "Middle-aged lady holding her cellphone",
+          nextLevel: "bestBuy",
+        },
+      ],
+    },
+
+    olderLady: {
+      message: `The older lady with the basket approaches you and then brings you over to a display. All she has to say about this is "I don't understand this." She doesn't want to elaborate. What do you tell her?`,
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: `"Can you please give me more information? I might be able to help you then."`,
+          nextLevel: "throwBasket",
+        },
+        {
+          text: "Make up an explanation. She can figure it out yourself.",
+          nextLevel: "acceptExplanation",
+        },
+      ],
+    },
+
+    throwBasket: {
+      message:
+        "She doesn't like this explanation, apparently. She throws her basket at you. How do you react?",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Fight her",
+          nextLevel: "ladyFight",
+        },
+        {
+          text: "Walk away",
+          nextLevel: "ladyWalkAway",
+        },
+      ],
+    },
+
+    ladyFight: {
+      message:
+        "You decide to fight her. Why did you? Security has to break you two apart, and you also get arrested. You did not survive Walmart Black Friday.",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Back to start",
+          nextLevel: "start",
+        },
+      ],
+    },
+
+    ladyWalkAway: {
+      message:
+        "You walk away while laughing to yourself. This was the right choice, because the lady stormed out of the store! What do you feel like doing now?",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Helping coworkers",
+          nextLevel: "helpCoworkers",
+        },
+        {
+          text: "Organizing shelves",
+          nextLevel: "organizing",
+        },
+      ],
+    },
+
+    acceptExplanation: {
+      message:
+        "The lady accepts your explanation and leaves you alone! What do you feel like doing now?",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Helping coworkers",
+          nextLevel: "helpCoworkers",
+        },
+        {
+          text: "Organizing shelves",
+          nextLevel: "organizing",
+        },
+      ],
+    },
+
+    returns: {
+      message:
+        "Someone walks up to you holding a knife set. They said they're here to make a return (on Black Friday???). Now what?",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Tell them to go home",
+          nextLevel: "returnsGoHome",
+        },
+        {
+          text: "Point them in the direction of Returns & Exchanges",
+          nextLevel: "returnsExchanges",
+        },
+      ],
+    },
+
+    returnsGoHome: {
+      message:
+        "You tell them to go home and then walk away. You try to be productive the rest of your shift.",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "I've been working for HOURS",
+          nextLevel: "notMyProblem",
+        },
+      ],
+    },
+
+    returnsExchanges: {
+      message:
+        "You point them in the direction of Returns & Exchanges. They thank you and quickly walk away. What do you do now?",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Organize shelves",
+          nextLevel: "organizing",
+        },
+        {
+          text: "Help my coworkers",
+          nextLevel: "helpCoworkers",
+        },
+      ],
+    },
+
+    bestBuy: {
+      message:
+        "The lady that comes up with you shows you her phone and asks you if Walmart can price match a microwave with Best Buy. You can't price match. What do you tell her?",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: `"Sorry, but we can't do that."`,
+          nextLevel: "priceMatchNo",
+        },
+        {
+          text: `"Yeah, we can price match."`,
+          nextLevel: "priceMatchYes",
+        },
+      ],
+    },
+
+    priceMatchNo: {
+      message:
+        "The lady gets upset and calls 911 on you. The police arrive, and since there's no true emergency, they arrest her for misusing the emergency service. With that done, you're free to do your job. Congratulations! You've survived Walmart Black Friday!",
+      music: "Period.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "Yay!",
+          nextLevel: "start",
+        },
+      ],
+    },
+
+    priceMatchYes: {
+      message:
+        "Yes, you lie to the customer. But she won't find out you did until she's paying for the microwave.",
+      music: "Still, Move Forward!.mp3",
+      background_image: "",
+      choices: [
+        {
+          text: "I'm such a great liar",
+          nextLevel: "notMyProblem",
         },
       ],
     },
