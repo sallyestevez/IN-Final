@@ -127,8 +127,8 @@ a:focus {
   background-position-x: center;
   background-position-y: bottom;
   background-size: cover;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
+  /* background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat; */
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -181,7 +181,7 @@ a:focus {
   color: white;
   background: rgba(130, 130, 130, 0.1);
 }
-.btn-circle i.animated {
+/* .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
   -moz-transition-property: -moz-transform;
@@ -224,7 +224,7 @@ a:focus {
     -moz-transform: scale(1);
     transform: scale(1);
   }
-}
+} */
 .content-section {
   padding-top: 100px;
 }
@@ -317,6 +317,6 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-body {
+/* body {
   webkit-tap-highlight-color: rgba(130, 130, 130, 0.2);
-}
+} */
