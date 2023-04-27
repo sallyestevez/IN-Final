@@ -21,8 +21,8 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  text-transform: uppercase;
-  font-family: 'Lora', serif;
+  /* text-transform: uppercase; */
+  font-family: "Lora", serif;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -39,7 +39,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #42dca3;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -56,7 +56,7 @@ a:focus {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(130, 130, 130, 0.3);
   text-transform: uppercase;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: black;
 }
 .navbar-custom .navbar-toggle {
@@ -99,7 +99,7 @@ a:focus {
   background-color: rgba(130, 130, 130, 0.3);
 }
 .navbar-custom .nav li.active a:hover {
-  color:white;
+  color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -123,7 +123,7 @@ a:focus {
   height: 100%;
   padding: 100px 0;
   text-align: center;
-  color:white;
+  color: white;
   background-position-x: center;
   background-position-y: bottom;
   background-size: cover;
@@ -266,16 +266,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #42dca3;
+  color: #42dca3;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #42dca3;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: #42dca3;
 }
 ul.banner-social-buttons {
   margin-top: 0;
