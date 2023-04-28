@@ -57,7 +57,7 @@ var game = {
     quitting: {
       message:
         "You tell your boss about wanting to quit your job, but they try to convince you not to because a lot of employees have already said they're not coming in on Friday. What do you do?",
-      music: "Junes Theme.mp3",
+      music: "I'll Face Myself.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
@@ -75,8 +75,8 @@ var game = {
     yesQuit: {
       message:
         "You have successfully quit your retail job and are now living that sweet unemployed life. That is, until you have to look for a new job. The holiday rush is coming so it'll probably be very easy for you to find a job.",
-      music: "Junes Theme.mp3",
-      background_image: "",
+      music: "specialist (Reincarnation).mp3",
+      background_image: "Background2.jpg",
       choices: [
         {
           text: "Back to start!",
@@ -88,7 +88,7 @@ var game = {
     yesOpening: {
       message:
         "Well, you're actually opening Walmart. On Black Friday. Good luck!!!",
-      music: "Backside Of The TV.mp3",
+      music: "I'll Face Myself.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -101,7 +101,7 @@ var game = {
     thanksgivingDay: {
       message:
         "It's Thanksgiving Day, which means that you'll have to be at Walmart in a few hours. What do you do?",
-      music: "Reach Out To The Truth -First Battle-.mp3",
+      music: "Alone.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
@@ -110,7 +110,7 @@ var game = {
         },
 
         {
-          text: "Stay up late. I want to spend time with my family.",
+          text: "Stay up late. I want to spend time with my family!",
           nextLevel: "sleepLate",
         },
       ],
@@ -119,7 +119,7 @@ var game = {
     sleepEarly: {
       message:
         "Your alarm goes off at 4 am. Thankfully, you feel great because you went to bed early! You get ready since you have to be at work by 5 am.",
-      music: "Period.mp3",
+      music: "Alone.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
@@ -132,7 +132,7 @@ var game = {
     sleepLate: {
       message:
         "Your alarm goes off at 4 am. You got less than 2 hours of sleep! What do you do?",
-      music: "Alone.mp3",
+      music: "Who's There.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -149,7 +149,7 @@ var game = {
     sleepIn: {
       message:
         "You sleep in. You really don't care about what's going on at your job. If you get fired it's whatever.",
-      music: "Signs Of Love.mp3",
+      music: "Reverie.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
@@ -161,8 +161,8 @@ var game = {
 
     goToWalmart: {
       message:
-        "You make it to Walmart, and there's already a crowd of people waiting outside! Some people are yelling at you to open the store. Do you do it?",
-      music: "Who's There.mp3",
+        "You make it to Walmart, and there's already a crowd of people waiting outside! Some people are yelling at you to open the store, even though it's supposed to open at 6. Do you do it?",
+      music: "Theme of Junes.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
@@ -180,7 +180,7 @@ var game = {
     noOpen: {
       message:
         "You ignore customers' pleas. It's not even 5:30 yet. They can wait until opening.",
-      music: "Deduction.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -193,11 +193,11 @@ var game = {
     yesOpen: {
       message:
         "Right when you're about to open, a coworker sees what you're doing and tells you to stop.",
-      music: "Reverie.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
-          text: "ok, time to enter the store and get ready.",
+          text: "OK, time to enter the store and get ready.",
           nextLevel: "insideStore",
         },
       ],
@@ -206,7 +206,7 @@ var game = {
     insideStore: {
       message:
         "You and your coworkers spend time organizing the store before opening (as if it's not going to be unrecognizable in a few hours). Finally, it's time to open! Brace yourself for what's to come.",
-      music: "Backside Of The TV.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
@@ -214,7 +214,7 @@ var game = {
           nextLevel: "openingTime",
         },
         {
-          text: "Happy Hunger Games, and may the odds be ever in your favor.",
+          text: "Happy Hunger Games, and may the odds be ever in your favor!",
           nextLevel: "openingTime",
         },
       ],
@@ -222,8 +222,8 @@ var game = {
 
     openingTime: {
       message:
-        "People come rushing in right away. However, since the crowd is too large, not everyone can enter the store at the same time. A lady who was unable to enter the store tells you that the lines are too long. Can you make them shorter?",
-      music: "Borderline of Madness.mp3",
+        "People come rushing in right away. However, since the crowd is too large, not everyone can enter the store at the same time. A lady who was unable to enter the store tells you that the lines are too long. She wants to know if you can make them shorter.",
+      music: "I'll Face Myself.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -258,7 +258,7 @@ var game = {
     managerLie: {
       message:
         "You're able to convince her that you're the manager, and that she should wait her turn.",
-      music: "I'll Face Myself.mp3",
+      music: "specialist (Reincarnation).mp3",
       background_image: "Background2.jpg",
       choices: [
         {
@@ -271,7 +271,7 @@ var game = {
     managerTruth: {
       message:
         "The lady gets mad when you tell her this and throws a tantrum. She sits on the floor and it doesn't look like she'll get up anytime soon. You really don't want to deal with this right now.",
-      music: "Electronica In Velvet Room.mp3",
+      music: "Alone.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -292,7 +292,7 @@ var game = {
     ladySecurity: {
       message:
         "You call security and leave the rest up to them. Finally, you can get back to work.",
-      music: "Reverie.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
@@ -305,7 +305,7 @@ var game = {
     ladyGoHome: {
       message:
         "Since the store had JUST opened and you were already dealing with insufferable people, you figured that the rest of today would be torture. You decide to go home. Unfortunately, you did not survive Walmart Black Friday.",
-      music: "Where We Used To Be.mp3",
+      music: "Alone.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
@@ -318,15 +318,15 @@ var game = {
     section: {
       message:
         "Now that that's done, what do you want to deal with? I mean, where do you want to work?",
-      music: "Exploration.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
-          text: "Electronics section",
+          text: "Electronics section!",
           nextLevel: "electronics",
         },
         {
-          text: "Home goods section",
+          text: "Home goods section!",
           nextLevel: "homeGoods",
         },
       ],
@@ -334,16 +334,16 @@ var game = {
 
     electronics: {
       message:
-        "Ah yes, the electronics section. Home to Xbox bundles and $200 4K TVs.",
-      music: "Gormott.mp3",
+        "Ah yes, the electronics section. Home to Xbox bundles and $200 4K TVs. Now what?",
+      music: "Theme of Junes.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
-          text: "Help out with the TVs",
+          text: "Help out with the TVs!",
           nextLevel: "tvs",
         },
         {
-          text: "Help out with the Xbox bundles",
+          text: "Help out with the Xbox bundles!",
           nextLevel: "xbox",
         },
       ],
@@ -352,7 +352,7 @@ var game = {
     tvs: {
       message:
         "Over at the TV section, you see two people fighting over a TV. Do you intervene?",
-      music: "Those Who Stand Against Our Path.mp3",
+      music: "I'll Face Myself.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
@@ -373,7 +373,7 @@ var game = {
     fightLoss: {
       message:
         "You try to break up the fight, but uh oh! One of the guys fighting punches you in the face and breaks your nose!",
-      music: "Kirby Dance.mp3",
+      music: "Who's There.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -386,7 +386,7 @@ var game = {
     hospital: {
       message:
         "Unfortunately, you now have to go to the hospital. An ambulance comes to pick you up. You were not able to survive Walmart Black Friday.",
-      music: "Defeat.mp3",
+      music: "Reverie.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
@@ -399,11 +399,11 @@ var game = {
     tvSecurity: {
       message:
         "You call security, who comes in to stop the fight. Problem solved, I guess. You can move on.",
-      music: "Torigoth Day.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
-          text: "Go over to the Xboxes",
+          text: "Go over to the Xboxes.",
           nextLevel: "xbox",
         },
       ],
@@ -412,7 +412,7 @@ var game = {
     xbox: {
       message:
         "You are now at the Xbox area, where they have a few Xbox + Halo Infinite bundles for $350! And by 'few' I mean 10. There are about 100 people waiting in line. What do you do?",
-      music: "Monster Surprised You.mp3",
+      music: "Deduction.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -429,7 +429,7 @@ var game = {
     throwXbox: {
       message:
         "The Xbox section is chaos. Everyone is trying to grab 1 of the 10 Xboxes. You could have done something else...",
-      music: "Monster Surprised You.mp3",
+      music: "specialist (Reincarnation).mp3",
       background_image: "Background1.jpg",
       choices: [
         {
@@ -446,8 +446,7 @@ var game = {
     firstCome: {
       message:
         "You give out all the Xbox bundles, but there are still people waiting in line. Which announcement do you make?",
-      music:
-        "the xenoblade chronicles 2 battle theme but you won't forget it.mp3",
+      music: "Deduction.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
@@ -468,11 +467,11 @@ var game = {
     noLongerAvailable: {
       message:
         "Customers actually listened to you! They're leaving! Now what do you do?",
-      music: "Defeat.mp3",
+      music: "Electronica In Velvet Room.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
-          text: "Stay in the electronics section",
+          text: "Stay in the electronics section.",
           nextLevel: "stayHere",
         },
         {
@@ -485,11 +484,11 @@ var game = {
     xboxGone: {
       message:
         "For some reason customers think you're lying. They demand to go to the backrooms and see for themselves. You try to explain that you can't let them do that, but they start throwing insults at you. What's next?",
-      music: "Omens of Life.mp3",
+      music: "Who's There.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
-          text: "Start crying",
+          text: "Start crying :(",
           nextLevel: "cry",
         },
         {
@@ -501,7 +500,7 @@ var game = {
 
     moreXboxes: {
       message: `The "additional Xbox shipment" was a lie. "I'll be back" was also a lie. You left and didn't look back. The customers are waiting for their Xboxes! Management finds out about this and you get fired on the spot. You (technically) survived Black Friday, but at what cost?`,
-      music: "Omens of Life.mp3",
+      music: "Who's There.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
@@ -514,7 +513,7 @@ var game = {
     notMyProblem: {
       message:
         "It seems like the store is getting busier and busier. There are too many customers and you can't keep up with them all. How are you feeling?",
-      music: "Torigoth Night.mp3",
+      music: "Alone.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -535,7 +534,7 @@ var game = {
       background_image: "Background1.jpg",
       choices: [
         {
-          text: "Back to start",
+          text: "Back to start :(",
           nextLevel: "start",
         },
       ],
@@ -574,11 +573,11 @@ var game = {
       background_image: "Background1.jpg",
       choices: [
         {
-          text: "Organizing shelves",
+          text: "Organizing shelves!",
           nextLevel: "organizing",
         },
         {
-          text: "Helping customers out",
+          text: "Helping customers out!",
           nextLevel: "helpCustomers",
         },
       ],
@@ -599,19 +598,19 @@ var game = {
 
     helpCustomers: {
       message: "You've decided to help customers. Who approaches you first?",
-      music: "Still, Move Forward!.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
-          text: "Older lady holding a basket",
+          text: "Older lady holding a basket.",
           nextLevel: "olderLady",
         },
         {
-          text: "Person with something in their hands",
+          text: "Person with something in their hands.",
           nextLevel: "returns",
         },
         {
-          text: "Middle-aged lady holding her cellphone",
+          text: "Middle-aged lady holding her cellphone.",
           nextLevel: "bestBuy",
         },
       ],
@@ -619,7 +618,7 @@ var game = {
 
     olderLady: {
       message: `The older lady with the basket approaches you and then brings you over to a display. All she has to say about this is "I don't understand this." She doesn't want to elaborate. What do you tell her?`,
-      music: "Still, Move Forward!.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
@@ -627,7 +626,7 @@ var game = {
           nextLevel: "throwBasket",
         },
         {
-          text: "Make up an explanation. She can figure it out yourself.",
+          text: "Make up an explanation. She can figure it out herself.",
           nextLevel: "acceptExplanation",
         },
       ],
@@ -636,15 +635,15 @@ var game = {
     throwBasket: {
       message:
         "She doesn't like this explanation, apparently. She throws her basket at you. How do you react?",
-      music: "Still, Move Forward!.mp3",
+      music: "I'll Face Myself.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
-          text: "Fight her",
+          text: "Fight her!",
           nextLevel: "ladyFight",
         },
         {
-          text: "Walk away",
+          text: "Walk away!",
           nextLevel: "ladyWalkAway",
         },
       ],
@@ -657,7 +656,7 @@ var game = {
       background_image: "Background3.jpg",
       choices: [
         {
-          text: "Back to start",
+          text: "Back to start :/",
           nextLevel: "start",
         },
       ],
@@ -666,15 +665,15 @@ var game = {
     ladyWalkAway: {
       message:
         "You walk away while laughing to yourself. This was the right choice, because the lady stormed out of the store! What do you feel like doing now?",
-      music: "Still, Move Forward!.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
-          text: "Helping coworkers",
+          text: "Helping coworkers.",
           nextLevel: "helpCoworkers",
         },
         {
-          text: "Organizing shelves",
+          text: "Organizing shelves.",
           nextLevel: "organizing",
         },
       ],
@@ -683,15 +682,15 @@ var game = {
     acceptExplanation: {
       message:
         "The lady accepts your explanation and leaves you alone! What do you feel like doing now?",
-      music: "Still, Move Forward!.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
-          text: "Helping coworkers",
+          text: "Helping coworkers.",
           nextLevel: "helpCoworkers",
         },
         {
-          text: "Organizing shelves",
+          text: "Organizing shelves.",
           nextLevel: "organizing",
         },
       ],
@@ -700,15 +699,15 @@ var game = {
     returns: {
       message:
         "Someone walks up to you holding a knife set. They said they're here to make a return (on Black Friday???). Now what?",
-      music: "Still, Move Forward!.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
-          text: "Tell them to go home",
+          text: "Tell them to go home.",
           nextLevel: "returnsGoHome",
         },
         {
-          text: "Point them in the direction of Returns & Exchanges",
+          text: "Point them in the direction of Returns & Exchanges.",
           nextLevel: "returnsExchanges",
         },
       ],
@@ -717,11 +716,11 @@ var game = {
     returnsGoHome: {
       message:
         "You tell them to go home and then walk away. You try to be productive the rest of your shift.",
-      music: "Still, Move Forward!.mp3",
+      music: "Alone.mp3",
       background_image: "Background1.jpg",
       choices: [
         {
-          text: "I've been working for HOURS",
+          text: "I've been working for HOURS!",
           nextLevel: "notMyProblem",
         },
       ],
@@ -730,15 +729,15 @@ var game = {
     returnsExchanges: {
       message:
         "You point them in the direction of Returns & Exchanges. They thank you and quickly walk away. What do you do now?",
-      music: "Still, Move Forward!.mp3",
+      music: "specialist (Reincarnation).mp3",
       background_image: "Background2.jpg",
       choices: [
         {
-          text: "Organize shelves",
+          text: "Organize shelves.",
           nextLevel: "organizing",
         },
         {
-          text: "Help my coworkers",
+          text: "Help my coworkers.",
           nextLevel: "helpCoworkers",
         },
       ],
@@ -747,7 +746,7 @@ var game = {
     bestBuy: {
       message:
         "The lady that comes up with you shows you her phone and asks you if Walmart can price match a microwave with Best Buy. You can't price match. What do you tell her?",
-      music: "Still, Move Forward!.mp3",
+      music: "Theme of Junes.mp3",
       background_image: "Background3.jpg",
       choices: [
         {
@@ -776,12 +775,12 @@ var game = {
 
     priceMatchYes: {
       message:
-        "Yes, you lie to the customer. But she won't find out you did until she's paying for the microwave.",
-      music: "Still, Move Forward!.mp3",
+        "Yes, you lied to the customer. But she won't realize you did until she's paying for the microwave.",
+      music: "Electronica In Velvet Room.mp3",
       background_image: "Background2.jpg",
       choices: [
         {
-          text: "I'm such a great liar",
+          text: "I'm such a great liar!",
           nextLevel: "notMyProblem",
         },
       ],
