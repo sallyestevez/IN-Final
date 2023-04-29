@@ -527,6 +527,39 @@ var game = {
       ],
     },
 
+    better: {
+      message: "You're doing a great job! What do you feel like doing now?",
+      music: "Theme of Junes.mp3",
+      background_image: "Background2.jpg",
+      choices: [
+        {
+          text: "I want to stay in the electronics section.",
+          nextLevel: "stayHere",
+        },
+        {
+          text: "I want to help my coworkers.",
+          nextLevel: "helpCoworkers",
+        },
+        {
+          text: "I want to help some customers over in the home goods section.",
+          nextLevel: "helpCustomers",
+        },
+      ],
+    },
+
+    awful: {
+      message:
+        "You can't handle the pressure anymore. There is simply too much going on. You organize your belongings and leave. I'm sorry, but you did not survive Walmart Black Friday.",
+      music: "Alone.mp3",
+      background_image: "Background3.jpg",
+      choices: [
+        {
+          text: "Back to start :(",
+          nextLevel: "start",
+        },
+      ],
+    },
+
     cry: {
       message:
         "Customers can be so mean! You can't take it anymore and walk out of the store crying. You did not survive Walmart Black Friday.",
